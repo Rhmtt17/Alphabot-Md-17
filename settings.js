@@ -8,7 +8,7 @@ const {
 
 //sebagian panel gk support opena ai jadi mungkin apikey lu bakalan di blokir
 //klo misalkan pada saat memakai fitur ai, terus dapat email dari open si, itu berarti website tempat lu install bot gk support ai
-global.OpenAIKey = "YOUR_KEY" //login to https://platform.openai.com/account/api-keys to get apikey
+global.OpenAIKey = "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" //login to https://platform.openai.com/account/api-keys to get apikey
 
 // Website Api (jgn di ganti tomlol)
 global.APIs = {
@@ -24,25 +24,25 @@ global.sewabotnya = `
 edit sewabot di file settings.js line 24
 `
 // setting 
-global.firtsChat = true //send firts message to new user
-global.autoread = true // auto read message
+global.firtsChat = false //send firts message to new user
+global.autoread = false // auto read message
 global.antidelete = false // anti delete
-global.antiviewonce = true // anti view once
+global.antiviewonce = false // anti view once
 global.autobio = false //auto ganti bio
-global.anticall = true //anti call, jika true maka org yg nelpon bot auto di blokir
+global.anticall = false //anti call, jika true maka org yg nelpon bot auto di blokir
 global.userRegister = false
 global.autoblok212 = false //ubah jadi true biar nmr 212 di blok sama bot
-global.autolevelup = true
+global.autolevelup = false
 global.auto_antilink = false //jika true, bot (admin) otomatis menghapus pesan & mengeluarkan member yang mengirim link grup
 global.auto_antilink2 = true  //jika true, bot (admin) otomatis menghapus pesan member yang mengirim link grup
 global.auto_badword = false //jika true, bot (admin) otomatis menghapus pesan & mengeluarkan member yg mengirim kata kasar
 global.auto_badword2 = true  //jika true, bot (admin) otomatis menghapus pesan member yang mengirim kata kasar
 global.auto_antiwame = false  //jika true, bot (admin) otomatis menghapus pesan & mengeluarkan member yang mengirim link grup
-global.auto_antiwame2 = true  //jika true, bot (admin) otomatis menghapus pesan member yang mengirim link grup
-global.autowelcome = true //auto welcome msg all group
-global.autodetectpromote = true //auto detect admin all group
-global.autodetectdemote = true //auto detect un admin all group
-global.autogoodbye = true //auto goodbye msg all group
+global.auto_antiwame2 = false  //jika true, bot (admin) otomatis menghapus pesan member yang mengirim link grup
+global.autowelcome = false //auto welcome msg all group
+global.autodetectpromote = false //auto detect admin all group
+global.autodetectdemote = false //auto detect un admin all group
+global.autogoodbye = false //auto goodbye msg all group
 global.groupOnly = false //bot hanya bisa di gunakan dalam grup jika true
 
 //language
@@ -54,19 +54,19 @@ global.language = indonesia //change indonesia to english if you don't understan
 
 // Other
 // Other
-global.botname = "Alphabot-Mdོ" //namabot kalian
-global.ownername = "ᴹᴿ᭄ ZeeoneOfcོ ×፝֟͜×" //nama kalian
+global.botname = "Shadow17" //namabot kalian
+global.ownername = "ᴹᴿ᭄ R ×፝֟͜×" //nama kalian
 global.myweb = "https://s.id/zeeoneofc" //bebas asal jan hapus
 global.youtube = "https://youtube.com/c/@ZeeoneOfc" //bebas asal jan hapus
 global.myweb2 = "https://s.id/zeeoneofc" //bebas
 global.email = "zeeoneofc@gmail.com" //bebas
 global.region = "Indonesia" //bebas
-global.timezone = 'Asia/Makassar' //  timezone wib
+global.timezone = 'Asia/Jakarta' //  timezone wib
 global.premium_fitur = ["ai", "openai", "chatgpt"] //tambahin aja sendiri, soalnya gk semua org mau fiturnya premium jadi gw buat kyk gini aja, biar bisa custom fitur mana aja yang bakal di jadiin premium
-global.badword_list = ["asu", "anjir"] //tambahin sendiri kata² nya, gunakan huruf kecil
-global.premium = ['62887435047326'] //premium user
-global.owner = ["62887435047326", "62887435047326"] //ganti agar fitur owner bisa di gunakan
-global.ownernomer = owner[0] + "@s.whatsapp.net"
+global.badword_list = ["asu", "anjir", "kntl", "kontol", "mmk", "anjg"] //tambahin sendiri kata² nya, gunakan huruf kecil
+global.premium = ['628986390062'] //premium user
+global.owner = ["628986390062", "628986390062"] //ganti agar fitur owner bisa di gunakan
+global.ownernomer = owner[08985390062] + "@s.whatsapp.net"
 global.ownernomerr = "+"+ownernomer //tidak perlu di edit
 global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
@@ -87,82 +87,27 @@ global.limitawal = {
    free: 100
 }
 global.buttonDefault = [{
-   urlButton: {
-      displayText: 'Youtube Channel',
-      url: youtube
-   }
-}, {
-   urlButton: {
-      displayText: 'Website',
-      url: myweb
-   }
-}, {
-   quickReplyButton: {
-      displayText: '🏓 Ping',
-      id: '.ping'
-   }
-}, {
-   quickReplyButton: {
-      displayText: 'Owner 👤',
-      id: '.owner'
-   }
-}, {
    quickReplyButton: {
       displayText: '⚡ Command ⚡',
       id: '.command'
    }
 }]
 global.buttonDefault2 = [{
-   urlButton: {
-      displayText: 'Youtube Channel',
-      url: youtube
-   }
-}, {
-   urlButton: {
-      displayText: 'Website',
-      url: myweb
-   }
-}, {
    quickReplyButton: {
       displayText: '🏓 Ping',
       id: '.ping'
    }
-}, {
-   quickReplyButton: {
-      displayText: 'Owner 👤',
-      id: '.owner'
-   }
-}, {
-   quickReplyButton: {
-      displayText: '🎁 Donasi 🎁',
-      id: '.donasi'
-   }
 }]
 global.buttonDefault3 = [{
-      buttonId: `.owner`,
-      buttonText: {
-         displayText: '🙍‍♂️ Owner'
-      },
-      type: 1
-   },
-   {
-      buttonId: `.donasi`,
-      buttonText: {
-         displayText: 'Donation 💰'
-      },
-      type: 1
+      quickReplyButton: {
+      displayText: '⚡ Command ⚡',
+      id: '.command'
    }
-]
+}]
 global.buttonDefault4 = [{
    buttonId: '.command',
    buttonText: {
       displayText: '༺ Back'
-   },
-   type: 1
-}, {
-   buttonId: '.owner',
-   buttonText: {
-      displayText: 'Owner ༻'
    },
    type: 1
 }]
